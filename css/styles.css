@@ -1,0 +1,312 @@
+/* цвет основного текста #212121;*/
+/* цвет текста #757575 */
+/* цвет фона шапки #ffffff;*/
+/* цвет текста секции герой */
+/* акцент #2196F3 */
+/* цвет фона (акцента) вторичный #2F303A;*/
+/* цвет фона чем мы занимаемся #E5E5E5; */
+/* цвет фона наша команда #F5F4FA; */
+/* подвал линки rgba(255, 255, 255, 0.6); */
+/* текст адреса #ffffff */
+
+:root {
+  --primary-text-color: #212121;
+  --title-text-color: #757575;
+  --hero-text-color: #ffffff;
+  --primary-white-color: #ffffff;
+  --secondary-background-color: #2f303a;
+  --secondary-fon-color: #e5e5e5;
+  --accent-color: #2196f3;
+  --secondary-command-color: #f5f4fa;
+  --footer-link-color: rgba(255, 255, 255, 0.6);
+  --address-text-color: #ffffff;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+ul,
+ol {
+  margin: 0;
+  padding-left: 0;
+}
+
+header {
+  padding-top: 24px;
+  padding-bottom: 25px;
+  outline: 2px solid tomato;
+}
+
+.container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+  outline: 2px solid tomato;
+}
+
+body {
+  background-color: var(--primary-white-color);
+  color: var(--primary-text-color);
+  font-family: Roboto, sans-serif;
+  letter-spacing: 0.03em;
+}
+
+h1,
+h2,
+h3 {
+  font-family: Roboto, sans-serif;
+}
+
+ul {
+  list-style: none;
+}
+.link {
+  text-decoration: none;
+  color: var(--primary-text-color);
+  outline: 2px solid tomato;
+}
+
+/* ----------------Logo-------------------*/
+.nav-link-logo {
+  text-decoration: none;
+  color: var(--accent-color);
+  font-family: Raleway, sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  outline: 2px solid tomato;
+}
+.nav-link-logo:hover,
+.nav-link-logo:focus {
+  color: var(--accent-color);
+}
+.partlogo {
+  color: var(--primary-text-color);
+  font-family: Raleway, sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  outline: 2px solid tomato;
+}
+.footerlogo {
+  color: #ffffff;
+  font-family: Raleway, sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  outline: 2px solid tomato;
+}
+
+/* ---------------------навигация сайта------------------------ */
+.current {
+  color: var(--accent-color);
+  outline: 2px solid tomato;
+}
+
+.site-nav {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  outline: 2px solid tomato;
+}
+
+.site-nav .link:hover,
+.site-nav .link:focus {
+  color: var(--accent-color);
+}
+
+.display {
+  display: none;
+}
+
+/* ----------------------список адресов------------------------- */
+.auth-nav .link {
+  color: var(--title-text-color);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  outline: 2px solid tomato;
+}
+.auth-nav .link:hover,
+.auth-nav .link:focus {
+  color: var(--accent-color);
+}
+
+/* ----------------------секция герой-----------------------------*/
+.section-hero .hero-title {
+  background-color: var(--secondary-background-color);
+  color: var(--hero-text-color);
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  outline: 2px solid tomato;
+}
+
+/* ---------------------------кнопки--------------------------- */
+.hero-button {
+  color: var(--hero-text-color);
+  background-color: var(--accent-color);
+  font-family: Roboto, sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+  cursor: pointer;
+  border: 1px solid transparent;
+  outline: 2px solid tomato;
+}
+.hero-button:hover,
+.hero-button:focus {
+  color: var(--primary-text-color);
+  background-color: var(--hero-text-color);
+}
+
+/* -----------------блок секций, наша команда------------------- */
+.section-block {
+  background-color: var(--secondary-fon-color);
+  outline: 2px solid tomato;
+}
+.advant-title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  outline: 2px solid tomato;
+}
+
+.section-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
+  outline: 2px solid tomato;
+}
+
+.subtitle {
+  color: var(--title-text-color);
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  outline: 2px solid tomato;
+}
+
+.section-command {
+  background-color: var(--secondary-command-color);
+  outline: 2px solid tomato;
+}
+
+.section-title-desc {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
+  outline: 2px solid tomato;
+}
+
+.section-name {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+  letter-spacing: 0.03em;
+  outline: 2px solid tomato;
+}
+
+.subtitle-profession {
+  color: var(--title-text-color);
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+  letter-spacing: 0.03em;
+  outline: 2px solid tomato;
+}
+
+/* ---------------------------подвал (footer)------------------------- */
+
+.footer {
+  background-color: var(--secondary-background-color);
+  outline: 2px solid tomato;
+}
+.aside-link {
+  color: var(--address-text-color);
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
+  outline: 2px solid tomato;
+}
+.link-footer {
+  color: var(--footer-link-color);
+  text-decoration: none;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
+  outline: 2px solid tomato;
+}
+
+/* -----------------------------------------------------Стили для Портфолио------------------------------------------------- */
+
+/* ----------------------------кнопки (button), ilter---------------------------- */
+.button {
+  color: var(--primary-text-color);
+  font-family: Roboto, sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.6;
+  text-align: center;
+  letter-spacing: 0.03em;
+  cursor: pointer;
+  border: 1px solid transparent;
+  outline: 2px solid tomato;
+}
+button:hover,
+button:focus {
+  background-color: var(--accent-color);
+  color: var(--primary-white-color);
+}
+
+.workin {
+  background-color: var(--secondary-fon-color);
+  outline: 2px solid tomato;
+}
+.block-filter.section-block {
+  list-style: none;
+  outline: 2px solid tomato;
+}
+.section-title-work {
+  color: var(--primary-text-color);
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  outline: 2px solid tomato;
+}
+
+.subtitle-work {
+  color: var(--title-text-color);
+  font-size: 16px;
+  line-height: 1.9;
+  letter-spacing: 0.03em;
+  outline: 2px solid tomato;
+}
