@@ -22,6 +22,13 @@
   --address-text-color: #ffffff;
 }
 
+body {
+  background-color: var(--primary-white-color);
+  color: var(--primary-text-color);
+  font-family: Roboto, sans-serif;
+  letter-spacing: 0.03em;
+}
+
 p,
 h1,
 h2,
@@ -30,6 +37,7 @@ h4,
 h5,
 h6 {
   margin: 0;
+  font-family: Roboto, sans-serif;
 }
 
 ul,
@@ -39,35 +47,22 @@ ol {
 }
 
 header {
+  outline: 2px solid tomato;
   padding-top: 24px;
   padding-bottom: 25px;
-  outline: 2px solid tomato;
-}
-
-.container {
-  width: 1200px;
-  padding-left: 15px;
-  padding-right: 15px;
-  margin: 0 auto;
-  outline: 2px solid tomato;
-}
-
-body {
-  background-color: var(--primary-white-color);
-  color: var(--primary-text-color);
-  font-family: Roboto, sans-serif;
-  letter-spacing: 0.03em;
-}
-
-h1,
-h2,
-h3 {
-  font-family: Roboto, sans-serif;
 }
 
 ul {
   list-style: none;
 }
+
+.container {
+  width: 1200px;
+  padding: 0 15px;
+  margin: 0 auto;
+  outline: 2px solid tomato;
+}
+
 .link {
   text-decoration: none;
   color: var(--primary-text-color);
@@ -143,9 +138,15 @@ ul {
 }
 
 /* ----------------------секция герой-----------------------------*/
-.section-hero .hero-title {
+.section-hero {
   background-color: var(--secondary-background-color);
+  text-align: center;
+}
+
+.section-hero .hero-title {
   color: var(--hero-text-color);
+  padding-top: 200px;
+  padding-bottom: 280px;
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
@@ -169,6 +170,7 @@ ul {
   letter-spacing: 0.06em;
   cursor: pointer;
   border: 1px solid transparent;
+  border-radius: 4px;
   outline: 2px solid tomato;
 }
 .hero-button:hover,
@@ -278,6 +280,7 @@ ul {
   letter-spacing: 0.03em;
   cursor: pointer;
   border: 1px solid transparent;
+  border-radius: 4px;
   outline: 2px solid tomato;
 }
 button:hover,
