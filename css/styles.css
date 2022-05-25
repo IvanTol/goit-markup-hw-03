@@ -91,6 +91,12 @@ ul {
   line-height: 1.19;
   outline: 2px solid tomato;
 }
+
+.nav-link-logo.logo-footer {
+  margin-bottom: 20px;
+  display: inline-block;
+}
+
 .footerlogo {
   color: #ffffff;
   font-family: Raleway, sans-serif;
@@ -145,12 +151,10 @@ ul {
 
 .section-hero .hero-title {
   color: var(--hero-text-color);
-  padding-top: 200px;
-  padding-bottom: 280px;
+  margin-bottom: 30px;
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
-  text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   outline: 2px solid tomato;
@@ -160,16 +164,17 @@ ul {
 .hero-button {
   color: var(--hero-text-color);
   background-color: var(--accent-color);
+  padding: 10px 32px;
+  min-width: 200px;
+  height: 50px;
   font-family: Roboto, sans-serif;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.87;
-  display: flex;
-  align-items: center;
-  text-align: center;
+  display: inline-block;
   letter-spacing: 0.06em;
   cursor: pointer;
-  border: 1px solid transparent;
+  border: none;
   border-radius: 4px;
   outline: 2px solid tomato;
 }
@@ -179,12 +184,22 @@ ul {
   background-color: var(--hero-text-color);
 }
 
-/* -----------------блок секций, наша команда------------------- */
+/* -----------------блок секций (чем мы занимаемся), наша команда------------------- */
+
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.section.no-padding {
+  padding-top: 0;
+}
 .section-block {
   background-color: var(--secondary-fon-color);
   outline: 2px solid tomato;
 }
 .advant-title {
+  margin-bottom: 10px;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
@@ -194,6 +209,7 @@ ul {
 }
 
 .section-title {
+  margin-bottom: 50px;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
@@ -216,6 +232,7 @@ ul {
 }
 
 .section-title-desc {
+  margin-bottom: 50px;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
@@ -224,7 +241,12 @@ ul {
   outline: 2px solid tomato;
 }
 
+.img {
+  margin-bottom: 30px;
+}
+
 .section-name {
+  margin-bottom: 10px;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
@@ -250,6 +272,8 @@ ul {
 }
 .aside-link {
   color: var(--address-text-color);
+  display: inline-block;
+  margin-bottom: 9px;
   font-style: normal;
   font-size: 14px;
   line-height: 1.7;
@@ -258,6 +282,8 @@ ul {
 }
 .link-footer {
   color: var(--footer-link-color);
+  display: inline-block;
+  margin-bottom: 9px;
   text-decoration: none;
   font-style: normal;
   font-weight: 400;
