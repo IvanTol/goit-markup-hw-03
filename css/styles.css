@@ -57,9 +57,10 @@ ul {
 }
 
 .container {
-  width: 1200px;
   padding: 0 15px;
   margin: 0 auto;
+
+  width: 1200px;
   outline: 2px solid tomato;
 }
 
@@ -69,7 +70,7 @@ ul {
   outline: 2px solid tomato;
 }
 
-/* ----------------Logo-------------------*/
+/* ----------------------Logo-------------------------*/
 .nav-link-logo {
   text-decoration: none;
   color: var(--accent-color);
@@ -115,11 +116,22 @@ ul {
 }
 
 .site-nav {
+  display: flex;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
   outline: 2px solid tomato;
+}
+
+.site-nav .item + .item {
+  margin-left: 50px;
+}
+
+.site-nav .link {
+  display: block;
+  margin-top: 32px;
+  margin-bottom: 32px;
 }
 
 .site-nav .link:hover,
@@ -132,6 +144,14 @@ ul {
 }
 
 /* ----------------------список адресов------------------------- */
+.auth-nav {
+  display: flex;
+}
+
+.auth-nav .item + .item {
+  margin-left: 50px;
+}
+
 .auth-nav .link {
   color: var(--title-text-color);
   font-weight: 500;
@@ -155,6 +175,7 @@ ul {
 .section-hero .hero-title {
   color: var(--hero-text-color);
   margin-bottom: 30px;
+
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
@@ -174,6 +195,7 @@ ul {
   font-weight: 700;
   font-size: 16px;
   line-height: 1.87;
+
   display: inline-block;
   letter-spacing: 0.06em;
   cursor: pointer;
@@ -206,6 +228,7 @@ ul {
 
 .advant-title {
   margin-bottom: 10px;
+
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
@@ -216,6 +239,7 @@ ul {
 
 .section-title {
   margin-bottom: 50px;
+
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
@@ -239,6 +263,7 @@ ul {
 
 .section-title-desc {
   margin-bottom: 50px;
+
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
@@ -253,6 +278,7 @@ ul {
 
 .section-name {
   margin-bottom: 10px;
+
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
@@ -278,10 +304,9 @@ ul {
 }
 
 .link.aside-link {
-  color: var(--address-text-color);
-
   display: inline-block;
   margin-bottom: 9px;
+  color: var(--address-text-color);
   font-style: normal;
   font-size: 14px;
   line-height: 1.7;
@@ -290,9 +315,9 @@ ul {
 }
 
 .link-footer {
-  color: var(--footer-link-color);
   display: inline-block;
   margin-bottom: 9px;
+  color: var(--footer-link-color);
   text-decoration: none;
   font-style: normal;
   font-weight: 400;
@@ -314,6 +339,7 @@ ul {
   text-align: center;
   letter-spacing: 0.03em;
   cursor: pointer;
+
   border: 1px solid transparent;
   border-radius: 4px;
   outline: 2px solid tomato;
