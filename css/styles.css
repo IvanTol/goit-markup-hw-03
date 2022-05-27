@@ -433,8 +433,6 @@ button:focus {
 
 .section-block-ul {
   background-color: var(--secondary-fon-color);
-  display: flex;
-  flex-wrap: wrap;
   margin: -15px;
   outline: 2px solid tomato;
   
@@ -447,6 +445,8 @@ button:focus {
 
 
 .section-block-ul.marginb{
+  display: flex;
+  flex-wrap: wrap;
   margin-bottom: 0px;
   padding-bottom: 94px;
 }
