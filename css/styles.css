@@ -46,12 +46,6 @@ ol {
   padding-left: 0;
 }
 
-header {
-  outline: 2px solid tomato;
-  padding-top: 24px;
-  padding-bottom: 25px;
-}
-
 ul {
   list-style: none;
 }
@@ -70,8 +64,17 @@ ul {
   outline: 2px solid tomato;
 }
 
+.header {
+  outline: 2px solid tomato;
+  padding-top: 24px;
+  padding-bottom: 25px;
+}
+
 /* ----------------------Logo-------------------------*/
 .nav-link-logo {
+  padding-top: 24px;
+  padding-bottom: 25px;
+
   text-decoration: none;
   color: var(--accent-color);
   font-family: Raleway, sans-serif;
@@ -110,6 +113,13 @@ ul {
 }
 
 /* ---------------------навигация сайта------------------------ */
+
+.main-nav {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+}
+
 .current {
   color: var(--accent-color);
   outline: 2px solid tomato;
@@ -117,6 +127,7 @@ ul {
 
 .site-nav {
   display: flex;
+  margin-left: 93px;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -130,8 +141,8 @@ ul {
 
 .site-nav .link {
   display: block;
-  margin-top: 32px;
-  margin-bottom: 32px;
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 
 .site-nav .link:hover,
@@ -139,13 +150,18 @@ ul {
   color: var(--accent-color);
 }
 
-.display {
-  display: none;
+.vizually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
 }
 
 /* ----------------------список адресов------------------------- */
 .auth-nav {
   display: flex;
+  margin-left: auto;
 }
 
 .auth-nav .item + .item {
@@ -186,21 +202,24 @@ ul {
 
 /* ---------------------------кнопки--------------------------- */
 .hero-button {
-  color: var(--hero-text-color);
-  background-color: var(--accent-color);
+  display: inline-block;
   padding: 10px 32px;
   min-width: 200px;
   height: 50px;
+
+  color: var(--hero-text-color);
+  background-color: var(--accent-color);
   font-family: Roboto, sans-serif;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.87;
+  text-align: center;
 
-  display: inline-block;
   letter-spacing: 0.06em;
   cursor: pointer;
   border: none;
   border-radius: 4px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   outline: 2px solid tomato;
 }
 
@@ -211,6 +230,16 @@ ul {
 }
 
 /* -----------------блок секций (чем мы занимаемся), наша команда------------------- */
+
+.main-item {
+  display: flex;
+  margin: -15px;
+  
+}
+
+.main-item .item {
+  margin: 0 15px;
+}
 
 .section {
   padding-top: 94px;
@@ -237,6 +266,14 @@ ul {
   outline: 2px solid tomato;
 }
 
+.subtitle {
+  color: var(--title-text-color);
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  outline: 2px solid tomato;
+}
+
 .section-title {
   margin-bottom: 50px;
 
@@ -248,13 +285,6 @@ ul {
   outline: 2px solid tomato;
 }
 
-.subtitle {
-  color: var(--title-text-color);
-  font-size: 14px;
-  line-height: 1.71;
-  letter-spacing: 0.03em;
-  outline: 2px solid tomato;
-}
 
 .section-command {
   background-color: var(--secondary-command-color);
