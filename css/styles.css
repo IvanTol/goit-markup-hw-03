@@ -186,18 +186,23 @@ ul {
 .section-hero {
   background-color: var(--secondary-background-color);
   text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 200px;
+  padding-bottom: 200px;
 }
 
-.section-hero .hero-title {
+.hero-title {
   color: var(--hero-text-color);
   margin-bottom: 30px;
-
+  max-width: 696px;
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   outline: 2px solid tomato;
+  
 }
 
 /* ---------------------------кнопки--------------------------- */
@@ -234,11 +239,12 @@ ul {
 .main-item {
   display: flex;
   margin: -15px;
-  
 }
 
 .main-item .item {
+  width: 270px;
   margin: 0 15px;
+
 }
 
 .section {
@@ -284,7 +290,6 @@ ul {
   letter-spacing: 0.03em;
   outline: 2px solid tomato;
 }
-
 
 .section-command {
   background-color: var(--secondary-command-color);
