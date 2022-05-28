@@ -411,6 +411,11 @@ margin-bottom: 30px;
 /* -----------------------------------------------------Стили для Портфолио------------------------------------------------- */
 
 /* ----------------------------кнопки (button), ilter---------------------------- */
+.block-filter {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
 .button {
   color: var(--primary-text-color);
   font-family: Roboto, sans-serif;
@@ -460,7 +465,22 @@ button:focus {
 }
 
 .btn-flex {
+  display: flex;
   margin-bottom: 50px;
+  align-items: center;
+  justify-content: center;
+}
+
+/* .filter-flex {
+  margin-right: 8px;
+} */
+
+/* .filter-flex:last-child {
+  margin-right: 0;
+} */
+
+.filter-flex:not(:last-child) {
+  margin-right: 8px;
 }
 
 .block-work {
@@ -473,13 +493,13 @@ button:focus {
 .flex-conteiner {
   width: 370px;
   margin: 15px;
+  border: 1px solid #EEEEEE;
 }
 
 .block-work.marginb {
   display: flex;
   flex-wrap: wrap;
   margin-bottom: 0px;
-  padding-bottom: 94px;
 }
 /* margin-right: 30px;
   margin-bottom: 30px; */
