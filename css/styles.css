@@ -443,6 +443,13 @@ ul {
   padding-bottom: 94px;
 }
 
+.btn-flex {
+  display: flex;
+  margin-bottom: 50px;
+  align-items: center;
+  justify-content: center;
+}
+
 .button {
   color: var(--primary-text-color);
   font-family: Roboto, sans-serif;
@@ -470,8 +477,12 @@ button:focus {
   margin-right: auto;
 }
 
+.work-card {
+  padding: 20PX 24px;
+}
+
 .section-title-work {
-  margin: 20px 24px 4px;
+  margin-bottom: 4px;
 
   color: var(--primary-text-color);
   font-weight: 700;
@@ -481,19 +492,12 @@ button:focus {
 }
 
 .block-work .subtitle-work {
-  margin: 0 24px 20px;
   color: var(--title-text-color);
   font-size: 16px;
   line-height: 1.9;
   letter-spacing: 0.03em;
 }
 
-.btn-flex {
-  display: flex;
-  margin-bottom: 50px;
-  align-items: center;
-  justify-content: center;
-}
 
 /* .filter-flex {
   margin-right: 8px;
