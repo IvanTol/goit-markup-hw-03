@@ -489,7 +489,10 @@ button:focus {
 
 .work-card {
   padding: 20PX 24px;
-  border: 1px solid #EEEEEE;
+  border-left: 1px solid #EEEEEE;
+  border-right: 1px solid #EEEEEE;
+  border-bottom: 1px solid #EEEEEE;
+  
 }
 
 .section-title-work {
